@@ -37,25 +37,25 @@
 
 .taskbar-icon {
   @include short-transition;
-  width: 35px;
+  width: 42px;
 }
 
 .taskbar-icon-label {
   @include short-transition;
-  margin-top: -28px;
+  margin-top: -34px;
   visibility: hidden;
   width: 110px;
   background-color: $mac-label-color;
   border-radius: 5px;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
   padding: 2px 5px;
   color: $mac-label-font-color;
 }
 
 .label-triangle {
   @include short-transition;
-  margin-top: -21px;
-  margin-bottom: 11px;
+  margin-top: -24px;
+  margin-bottom: 14px;
   border: 5px solid $mac-label-color;
   transform: rotate(45deg);
   visibility: hidden;
@@ -66,6 +66,11 @@
 }
 
 .sublime-icon, .terminal-icon {
-  width: 38px;
+  width: 43px;
   filter: brightness(90%);
+}
+
+.terminal-icon {
+  margin-top: 1px;
+  width: 44px;
 }
