@@ -1,0 +1,33 @@
+@import "variables",
+        "mixins";
+
+.desktop {
+  height: 100vh;
+  width: 100vw;
+  background: url('../images/lakeside_wallpaper.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.desktop-icon-container {
+  @include short-transition;
+  width: 95px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.55);
+  }
+}
+
+.desktop-icon {
+  width: 65px;
+}

@@ -1,0 +1,71 @@
+@import "variables",
+        "mixins";
+
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  width: 92vw;
+  background-color: $mac-highlight-color;
+  display: flex;
+  flex-direction: row;
+  margin-left: 4vw;
+  border-radius: 5px 5px 0 0;
+}
+
+.taskbar-icon-container {
+  height: 50px;
+  width: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &:hover .taskbar-icon-label {
+    visibility: visible;
+  }
+
+  &:hover .label-triangle {
+    visibility: visible;
+  }
+
+  &:hover .taskbar-icon {
+    transform: scale(1.25);
+  }
+}
+
+.taskbar-icon {
+  @include short-transition;
+  width: 35px;
+}
+
+.taskbar-icon-label {
+  @include short-transition;
+  margin-top: -28px;
+  visibility: hidden;
+  width: 110px;
+  background-color: $mac-label-color;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  padding: 2px 5px;
+  color: $mac-label-font-color;
+}
+
+.label-triangle {
+  @include short-transition;
+  margin-top: -21px;
+  margin-bottom: 11px;
+  border: 5px solid $mac-label-color;
+  transform: rotate(45deg);
+  visibility: hidden;
+}
+
+.finder-icon {
+  margin-top: 2px;
+}
+
+.sublime-icon, .terminal-icon {
+  width: 38px;
+  filter: brightness(90%);
+}

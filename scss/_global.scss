@@ -1,0 +1,13 @@
+@import "variables",
+        "mixins";
+
+html, body {
+  width: 100vw;
+  overflow-x: hidden;
+  color: $general-font-color;
+}
+
+p {
+  @include primary-font;
+  @include unselectable;
+}

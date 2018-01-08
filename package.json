@@ -1,0 +1,27 @@
+{
+  "name": "devils-advocate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "devDependencies": {},
+  "dependencies": {
+    "express": "^4.15.4",
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brendacs/desktop-brenda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brendacs/desktop-brenda/issues"
+  },
+  "homepage": "https://brendacs.github.io/desktop-brenda"
+}
