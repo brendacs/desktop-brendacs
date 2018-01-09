@@ -1,0 +1,54 @@
+@import "variables",
+        "mixins";
+
+.window {
+  position: absolute;
+  top: 10vh;
+  left: 20vw;
+  height: 450px;
+  width: 700px;
+  background-color: $window-background;
+  border-radius: 6px;
+}
+
+.window-nav {
+  border-radius: 5px 5px 0 0;
+  position: relative;
+  height: 45px;
+  background: linear-gradient(to bottom, $mac-titlebar-color-light, $mac-titlebar-color-dark);
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid $mac-titlebar-color-border;
+}
+
+.window-button-container {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+
+  .window-button {
+    color: $mac-label-font-color;
+    border-width: 0;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    margin-left: 8px;
+  }
+
+  .button-close {
+    background-color: $mac-close-button;
+    border: 1px solid $mac-close-button-border;
+  }
+
+  .button-min {
+    background-color: $mac-min-button;
+    border: 1px solid $mac-min-button-border;
+  }
+
+  .button-expand {
+    background-color: $mac-expand-button;
+    border: 1px solid $mac-expand-button-border;
+  }
+}

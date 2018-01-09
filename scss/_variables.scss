@@ -1,5 +1,21 @@
-$folder-color: #6BCCF9;
+// general
 $general-font-color: #fff;
+
+// taskbar
 $mac-label-color: #cbcdcc;
 $mac-label-font-color: #000;
 $mac-highlight-color: rgba(179, 216, 253, 0.4);
+
+// windows
+$window-background: #fff;
+$mac-titlebar-color-light: rgba(240, 240, 240, 1);
+$mac-titlebar-color-dark: rgba(215, 215, 215, 1);
+$mac-titlebar-color-border: rgba(190, 190, 190, 1);
+
+// buttons
+$mac-close-button: rgba(252, 99, 93, 1);
+$mac-close-button-border: rgba(222, 89, 83, 1);
+$mac-min-button: rgba(253, 190, 65, 1);
+$mac-min-button-border: rgba(223, 180, 55, 1);
+$mac-expand-button: rgba(53, 205, 75, 1);
+$mac-expand-button-border: rgba(43, 185, 65, 1);

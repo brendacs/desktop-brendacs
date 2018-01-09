@@ -11,3 +11,7 @@ p {
   @include primary-font;
   @include unselectable;
 }
+
+.hide {
+  display: none;
+}
