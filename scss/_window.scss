@@ -71,10 +71,19 @@
   }
 }
 
-// universal mobile styles
+// finder window styles
+
+.finder-window {
+  top: 10vh;
+  left: 20vw;
+  height: 70vh;
+  width: 60vw;
+}
+
+// universal window mobile styles
 
 @media screen and (max-width: 1024px) {
-  .window {
+  .window, .finder-window {
     top: 0vh;
     left: 0vw;
     height: 100vh;
