@@ -19,11 +19,11 @@ $(document).ready(function() {
 
   $('.desktop-projects-folder').on('click', function() {
     $('.projects-folder').addClass('highlight');
-    $('.projects-items').removeClass('hide');
+    $('.project-items').removeClass('hide');
   });
 
   $('.desktop-documents-folder').on('click', function() {
     $('.documents-folder').addClass('highlight');
-    $('.documents-items').removeClass('hide');
+    $('.document-items').removeClass('hide');
   });
 });
