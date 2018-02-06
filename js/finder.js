@@ -31,6 +31,21 @@ $(document).ready(function() {
     $('.finder-item-container').removeClass('highlight');
     $(this).addClass('highlight');
     $('.finder-selected-item-wrapper').addClass('hide');
-    $('.finder-selected-item-wrapper').removeClass('hide');
+  });
+
+  $('.finder-item-container.burton-list-item').on('click', function(e) {
+    $('.finder-selected-item-wrapper.burton-selected-item').removeClass('hide');
+  });
+
+  $('.finder-item-container.berkeley-list-item').on('click', function(e) {
+    $('.finder-selected-item-wrapper.berkeley-selected-item').removeClass('hide');
+  });
+
+  $('.finder-item-container.major-list-item').on('click', function(e) {
+    $('.finder-selected-item-wrapper.major-selected-item').removeClass('hide');
+  });
+
+  $('.finder-item-container.minor-list-item').on('click', function(e) {
+    $('.finder-selected-item-wrapper.minor-selected-item').removeClass('hide');
   });
 });
