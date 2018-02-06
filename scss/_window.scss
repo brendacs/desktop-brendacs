@@ -1,12 +1,14 @@
 @import "variables",
         "mixins";
 
+// universal window styles
+
 .window {
   position: absolute;
-  top: 10vh;
-  left: 20vw;
-  height: 450px;
-  width: 700px;
+  top: 0vh;
+  left: 0vw;
+  height: 100vh;
+  width: 100vw;
   background-color: $window-background;
   border-radius: 6px;
 }
@@ -35,20 +37,61 @@
     width: 13px;
     height: 13px;
     margin-left: 8px;
+    cursor: pointer;
   }
 
   .button-close {
     background-color: $mac-close-button;
     border: 1px solid $mac-close-button-border;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: darken($mac-close-button, 15%);
+    }
   }
 
   .button-min {
     background-color: $mac-min-button;
     border: 1px solid $mac-min-button-border;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: darken($mac-min-button, 15%);
+    }
   }
 
   .button-expand {
     background-color: $mac-expand-button;
     border: 1px solid $mac-expand-button-border;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: darken($mac-expand-button, 5%);
+    }
   }
 }
+
+.finder-file-container {
+
+}
+
+// finder window
+
+.finder-window {
+  top: 10vh;
+  left: 20vw;
+  height: 70vh;
+  width: 60vw;
+}
+
+// universal mobile styles
+
+@media screen and (max-width: 1024px) {
+  .window {
+    top: 0vh;
+    left: 0vw;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
