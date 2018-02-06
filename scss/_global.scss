@@ -2,16 +2,27 @@
         "mixins";
 
 html, body {
+  height: 100vh;
   width: 100vw;
   overflow-x: hidden;
   color: $general-font-color;
 }
 
-p {
+h1, h2, h3, h4, h5, h6, p {
   @include primary-font;
   @include unselectable;
 }
 
 .hide {
   display: none;
+}
+
+.highlight {
+  background-color: $mac-highlight-color;
+}
+
+.pc {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }

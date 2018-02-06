@@ -1,0 +1,100 @@
+@import "variables",
+        "mixins";
+
+.finder-window {
+  top: 10vh;
+  left: 20vw;
+  height: 70vh;
+  width: 60vw;
+}
+
+.finder-file-container {
+  height: 95.25%;
+  width: 100%;
+  color: $finder-text-font-color;
+  display: flex;
+  flex-direction: row;
+}
+
+// finder sections
+
+.finder-section {
+  height: 100%;
+  width: 30%;
+  height: inherit;
+  padding: 2px 0;
+}
+
+.finder-section:last-child {
+  width: 40%;
+  border-right: none;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.finder-section-border {
+  border-right: 1px solid $mac-titlebar-color-border;
+}
+
+// finder folders
+
+.finder-directory-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 5px;
+
+  &:hover {
+    background-color: $mac-highlight-color;
+  }
+}
+
+.finder-folder-icon {
+  width: 20px;
+  margin-right: 5px;
+}
+
+// finder items
+
+.finder-item-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 5px;
+
+  &:hover {
+    background-color: $mac-highlight-color;
+  }
+}
+
+.finder-item-icon {
+  width: 16px;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+
+.finder-selected-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.finder-selected-item-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+}
+
+// finder selected items
+
+.selected-item-image {
+  width: 100%;
+}

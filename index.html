@@ -25,8 +25,9 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 
     <!-- Custom Scripts -->
-    <script src="js/window.js"></script>
     <script src="js/directory.js"></script>
+    <script src="js/window.js"></script>
+    <script src="js/finder.js"></script>
 
   </head>
   <body>
@@ -41,22 +42,22 @@
       </div>
 
       <div class="desktop">
-        <div class="desktop-icon-container">
+        <div class="desktop-icon-container desktop-education-folder">
           <a class="desktop-icon-link">
             <img class="desktop-icon" src="images/directory.png" /><p>Education</p>
           </a>
         </div>
-        <div class="desktop-icon-container">
+        <div class="desktop-icon-container desktop-experience-folder">
           <a class="desktop-icon-link">
             <img class="desktop-icon" src="images/directory.png" /><p>Experience</p>
           </a>
         </div>
-        <div class="desktop-icon-container">
+        <div class="desktop-icon-container desktop-projects-folder">
           <a class="desktop-icon-link">
             <img class="desktop-icon" src="images/directory.png" /><p>Projects</p>
           </a>
         </div>
-        <div class="desktop-icon-container">
+        <div class="desktop-icon-container desktop-documents-folder">
           <a class="desktop-icon-link">
             <img class="desktop-icon" src="images/directory.png" /><p>Documents</p>
           </a>
@@ -88,6 +89,8 @@
 
       <div class="window-container">
         <div class="window finder-window ui-widget-content">
+
+          <!-- window nav -->
           <div class="window-nav">
             <div class="window-button-container">
               <a class="window-button button-close"></a>
@@ -95,21 +98,103 @@
               <a class="window-button button-expand"></a>
             </div>
           </div>
+
           <div class="finder-file-container">
-            <div class="finder-outer-directory-list">
-              <div class="finder-directory"></div>
-              <div class="finder-directory"></div>
-              <div class="finder-directory"></div>
-              <div class="finder-directory"></div>
+
+            <!-- outermost folders -->
+            <div class="finder-section finder-outer-directory-list-container finder-section-border">
+              <div class="finder-outer-directory-list">
+                <div class="finder-directory-container education-folder">
+                  <div><img class="finder-folder-icon" src="images/directory.png" /></div>
+                  <div class="finder-directory"><p>Education</p></div>
+                </div>
+                <div class="finder-directory-container experience-folder">
+                  <div><img class="finder-folder-icon" src="images/directory.png" /></div>
+                  <div class="finder-directory"><p>Experience</p></div>
+                </div>
+                <div class="finder-directory-container projects-folder">
+                  <div><img class="finder-folder-icon" src="images/directory.png" /></div>
+                  <div class="finder-directory"><p>Projects</p></div>
+                </div>
+                <div class="finder-directory-container documents-folder">
+                  <div><img class="finder-folder-icon" src="images/directory.png" /></div>
+                  <div class="finder-directory"><p>Documents</p></div>
+                </div>
+              </div>
             </div>
-            <div class="finder-inner-directory-list">
-              <div class="finder-directory"></div>
-              <div class="finder-directory"></div>
-              <div class="finder-directory"></div>
-              <div class="finder-directory"></div>
+
+            <!-- inner items -->
+            <div class="finder-section finder-inner-items-list-container">
+              <!-- education items -->
+              <div class="finder-inner-items-list education-items hide">
+                <div class="finder-item-container">
+                  <div><img class="finder-item-icon" src="images/file.png" /></div>
+                  <div class="finder-item"><p>High School</p></div>
+                </div>
+                <div class="finder-item-container">
+                  <div><img class="finder-item-icon" src="images/file.png" /></div>
+                  <div class="finder-item"><p>College</p></div>
+                </div>
+              </div>
+              <!-- experience items -->
+              <div class="finder-inner-items-list experience-items hide">
+                <div class="finder-item-container">
+                  <div><img class="finder-item-icon" src="images/file.png" /></div>
+                  <div class="finder-item"><p>Stowk</p></div>
+                </div>
+                <div class="finder-item-container">
+                  <div><img class="finder-item-icon" src="images/file.png" /></div>
+                  <div class="finder-item"><p>Registria</p></div>
+                </div>
+              </div>
+              <!-- project items -->
+              <div class="finder-inner-items-list project-items hide">
+                <div class="finder-item-container">
+                  <div><img class="finder-item-icon" src="images/file.png" /></div>
+                  <div class="finder-item"><p>Discord Stop Bot</p></div>
+                </div>
+                <div class="finder-item-container">
+                  <div><img class="finder-item-icon" src="images/file.png" /></div>
+                  <div class="finder-item"><p>Devil's Advocate</p></div>
+                </div>
+                <div class="finder-item-container">
+                  <div><img class="finder-item-icon" src="images/file.png" /></div>
+                  <div class="finder-item"><p>Referobot</p></div>
+                </div>
+              </div>
+              <!-- document items -->
+              <div class="finder-inner-items-list document-items hide">
+                <div class="finder-item-container">
+                  <div><img class="finder-item-icon" src="images/file.png" /></div>
+                  <div class="finder-item"><p>Resume</p></div>
+                </div>
+                <div class="finder-item-container">
+                  <div><img class="finder-item-icon" src="images/file.png" /></div>
+                  <div class="finder-item"><p>Cover Letter</p></div>
+                </div>
+                <div class="finder-item-container">
+                  <div><img class="finder-item-icon" src="images/file.png" /></div>
+                  <div class="finder-item"><p>Quotes</p></div>
+                </div>
+              </div>
             </div>
-            <div class="finder-selected-item">
+
+            <!-- selected item panels -->
+            <div class="finder-section finder-selected-item-container">
+              <div class="finder-selected-item-wrapper hide">
+                <div class="finder-selected-item">
+                  <div class="finder-selected-image"><img class="selected-item-image" src="images/lakeside_wallpaper.jpg"/></div>
+                  <div class="finder-selected-item-text-container">
+                    <div class="finder-selected-text"><h2>Title<h2></div>
+                    <div class="finder-selected-text"><p>00/00/2000<p></div>
+                    <div class="finder-selected-text">
+                      <p>Summary summary there are some summaries here is some placeholder text it is cool<p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+
           </div>
         </div>
 
