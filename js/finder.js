@@ -92,6 +92,10 @@ $(document).ready(function() {
     $('.finder-selected-item-wrapper.liquefy-selected-item').removeClass('hide');
   });
 
+  $('.finder-item-container.news-list-item').on('click', function(e) {
+    $('.finder-selected-item-wrapper.news-selected-item').removeClass('hide');
+  });
+
   $('.finder-item-container.crayons-list-item').on('click', function(e) {
     $('.finder-selected-item-wrapper.crayons-selected-item').removeClass('hide');
   });
