@@ -16,6 +16,8 @@
   width: 30%;
   height: inherit;
   padding: 2px 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .finder-section:last-child {
@@ -78,11 +80,17 @@
   align-items: center;
   text-align: center;
   padding: 10px;
+}
 
+.finder-selected-text {
   h2 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    padding: 5px 0;
+  }
+
+  .date {
+    font-style: italic;
+    margin-bottom: 5px;
   }
 }
 
@@ -90,8 +98,9 @@
 
 .selected-item-image {
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .selected-file {
-  width: 70%;
+  width: 60%;
 }
