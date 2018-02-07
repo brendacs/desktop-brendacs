@@ -13,6 +13,14 @@ h1, h2, h3, h4, h5, h6, p {
   @include unselectable;
 }
 
+@media screen and (max-width: 1024px) {
+  h1, h2, h3, h4, h5, h6, p {
+    @include primary-font;
+    @include unselectable;
+    font-size: 10px;
+  }
+}
+
 .hide {
   display: none;
 }
