@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto" rel="stylesheet">
 
     <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
     <link href="css/main.min.css" rel="stylesheet" type="text/css">
 
     <!-- CDNs -->
@@ -25,17 +26,23 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 
     <!-- Custom Scripts -->
-    <script src="js/directory.js"></script>
-    <script src="js/window.js"></script>
-    <script src="js/finder.js"></script>
+    <script type="text/javascript" src="js/directory.js"></script>
+    <script type="text/javascript" src="js/window.js"></script>
+    <script type="text/javascript" src="js/finder.js"></script>
 
   </head>
   <body>
     <div class="pc">
       <div class="user">
         <div class="user-icon-container">
+          <p class="user-name">Brenda</p>
+          <a class="user-icon-link" href="https://www.github.com/brendacs" target="_blank">
+            <img class="user-icon" src="images/github.svg" />
+          </a>
+          <a class="user-icon-link" href="https://www.linkedin.com/in/brendacs" target="_blank">
+            <img class="user-icon" src="images/linkedin.png" />
+          </a>
           <a class="user-icon-link">
-            <p class="user-name">Brenda<br/>Zhang</p>
             <img class="user-icon" src="images/user.png" />
           </a>
         </div>
@@ -73,7 +80,7 @@
         <div class="taskbar-icon-container">
           <p class="taskbar-icon-label">Google Chrome</p>
           <div class="label-triangle"></div>
-          <a class="taskbar-icon-link"><img class="taskbar-icon" src="images/chrome.ico" /></a>
+          <a class="taskbar-icon-link"><img class="taskbar-icon browser-icon" src="images/chrome.ico" /></a>
         </div>
         <div class="taskbar-icon-container">
           <p class="taskbar-icon-label">Sublime</p>
@@ -85,15 +92,15 @@
           <div class="label-triangle"></div>
           <a class="taskbar-icon-link"><img class="taskbar-icon terminal-icon" src="images/terminal.png" /></a>
         </div>
-        <div class="taskbar-icon-container">
-          <p class="taskbar-icon-label">Preview</p>
-          <div class="label-triangle"></div>
-          <a class="taskbar-icon-link"><img class="taskbar-icon" src="images/preview.png" /></a>
+        <div class="taskbar-icon-container hide">
+          <p class="taskbar-icon-label hide">Preview</p>
+          <div class="label-triangle hide"></div>
+          <a class="taskbar-icon-link hide"><img class="taskbar-icon preview-icon hide" src="images/preview.png" /></a>
         </div>
       </div>
 
       <div class="window-container">
-        <div class="window finder-window ui-widget-content">
+        <div class="window finder-window ui-widget-content hide">
 
           <!-- window nav -->
           <div class="window-nav">
@@ -104,7 +111,7 @@
             </div>
           </div>
 
-          <div class="finder-file-container">
+          <div class="finder-file-container content-container">
 
             <!-- outermost folders -->
             <div class="finder-section finder-outer-directory-list-container finder-section-border">
@@ -133,11 +140,11 @@
               <!-- education items -->
               <div class="finder-inner-items-list education-items hide">
                 <div class="finder-item-container burton-list-item">
-                  <div><img class="finder-item-icon" src="images/file.png" /></div>
+                  <div><img class="finder-item-icon" src="images/burton.jpg" /></div>
                   <div class="finder-item"><p>Burton High School.jpg</p></div>
                 </div>
                 <div class="finder-item-container berkeley-list-item">
-                  <div><img class="finder-item-icon" src="images/file.png" /></div>
+                  <div><img class="finder-item-icon" src="images/berkeley.jpg" /></div>
                   <div class="finder-item"><p>UC Berkeley.jpg</p></div>
                 </div>
                 <div class="finder-item-container major-list-item">
@@ -152,15 +159,15 @@
               <!-- experience items -->
               <div class="finder-inner-items-list experience-items hide">
                 <div class="finder-item-container climate-list-item">
-                  <div><img class="finder-item-icon" src="images/file.png" /></div>
+                  <div><img class="finder-item-icon" src="images/climate.jpg" /></div>
                   <div class="finder-item"><p>The Climate Corporation.jpg</p></div>
                 </div>
                 <div class="finder-item-container stowk-list-item">
-                  <div><img class="finder-item-icon" src="images/file.png" /></div>
+                  <div><img class="finder-item-icon" src="images/stowk.jpg" /></div>
                   <div class="finder-item"><p>Stowk.jpg</p></div>
                 </div>
                 <div class="finder-item-container registria-list-item">
-                  <div><img class="finder-item-icon" src="images/file.png" /></div>
+                  <div><img class="finder-item-icon" src="images/registria.png" /></div>
                   <div class="finder-item"><p>Registria.png</p></div>
                 </div>
                 <div class="finder-item-container decal-list-item">
@@ -168,7 +175,7 @@
                   <div class="finder-item"><p>Web Design DeCal.pdf</p></div>
                 </div>
                 <div class="finder-item-container aaa-list-item">
-                  <div><img class="finder-item-icon" src="images/file.png" /></div>
+                  <div><img class="finder-item-icon" src="images/aaa.jpg" /></div>
                   <div class="finder-item"><p>Asian American Association.jpg</p></div>
                 </div>
                 <div class="finder-item-container ffl-list-item">
@@ -295,7 +302,7 @@
                     <div class="finder-selected-text"><h3>Full Stack Engineer, Web and Mobile</h3></div>
                     <div class="finder-selected-text"><p class="date">03/15/2017 — present</p></div>
                     <div class="finder-selected-text">
-                      <p>Built the front end of web app and mobile app using React, React Native, and Redux. Created homepage, form, and dashboard components with React and Redux. Integrated front end components with backend functions, data, and API calls. Worked with MongoDB/mongoose/GraphQL to create API calls, update, and save user data. Refactored the vehicle API to use two different services for VIN decoding and car data. Integrated Google Maps Places API to increase location accuracy and route distances. Implemented and improved new features and fixed challenging bugs on web/mobile apps. Reviewed intern code, answered intern questions, and fixed merge conflicts.</p>
+                      <p>Built the front end of web app (including homepage, form, and dashboard components) and mobile app using React, React Native, and Redux. Integrated front end components with backend functions, data, and API calls. Worked with MongoDB/mongoose/GraphQL to create API calls, update, and save user data. Refactored the vehicle API to use two different services for VIN decoding and car data. Integrated Google Maps Places API to increase location accuracy and route distances. Implemented and improved new features and fixed challenging bugs on web/mobile apps.</p>
                     </div>
                   </div>
                 </div>
@@ -321,7 +328,7 @@
                     <div class="finder-selected-text"><h3>Web Developer, Public Relations Chair, Internal Relations Head</h3></div>
                     <div class="finder-selected-text"><p class="date">09/15/2015 — 12/15/2017</p></div>
                     <div class="finder-selected-text">
-                      <p>As web developer, I created a completely new website with HTML, CSS, and jQuery for AAA and maintained it throughout the year with requested updates. As PR chair, I led my committee and officers in marketing AAA events to students on-campus and online. In handling AAA's social media presence, I saw a few gaps in our marketing and outreach and thus created and maintained new social media accounts for AAA, including an Instagram integrated with Facebook and a Confessions page. As internal relations head, I and a partner planned and carried out bi-weekly events for dozens of members in the family system and kept all members up to date with current events.</p>
+                      <p>As web developer, I created a new website with HTML, CSS, and jQuery for AAA and maintained it throughout the year with requested updates. As PR chair, I led my committee and officers in marketing AAA events to students on-campus and online. In handling AAA's social media presence, I saw a few gaps in our marketing and outreach and thus created and maintained new social media accounts for AAA. As internal relations head, I and a partner planned and carried out bi-weekly events for dozens of club members.</p>
                     </div>
                   </div>
                 </div>
@@ -347,7 +354,7 @@
                     <div class="finder-selected-text"><h3>Lead Web Developer, Project Manager</h3></div>
                     <div class="finder-selected-text"><p class="date">12/15/2016 — 05/15/2017</p></div>
                     <div class="finder-selected-text">
-                      <p>Led team of 9 developers and 3 designers alongside organization's CEO. Organized beginning stages of web development by creating workflow schedule. Set up and maintain GitHub, Slack, Trello, member assignments, updates, and reminders. Developed website from wireframes using HTML, CSS, Bootstrap and Javascript. Taught and mentored less experienced developers in Git and web development best practices. Led and initiated Agile development practices and weekly stand-up meetings.</p>
+                      <p>Led team of 9 developers and 3 designers alongside organization's CEO. Set up and maintained GitHub, Slack, Trello, assignments and updates. Developed website from wireframes using HTML, CSS, Bootstrap and JS. Taught and mentored less experienced developers in Git and web dev.</p>
                     </div>
                   </div>
                 </div>
@@ -476,6 +483,18 @@
           </div> <!-- finder-file-container -->
         </div> <!-- finder window end -->
 
+        <div class="window preview-window ui-widget-content hide">
+          <div class="window-nav">
+            <div class="window-button-container">
+              <a class="window-button button-close"></a>
+              <a class="window-button button-min"></a>
+              <a class="window-button button-expand"></a>
+            </div>
+          </div>
+          <div class="finder-file-container content-container">
+          </div>
+        </div>
+
         <div class="window browser-window ui-widget-content hide">
           <div class="window-nav">
             <div class="window-button-container">
@@ -483,6 +502,8 @@
               <a class="window-button button-min"></a>
               <a class="window-button button-expand"></a>
             </div>
+          </div>
+          <div class="finder-file-container content-container">
           </div>
         </div>
 
@@ -494,6 +515,8 @@
               <a class="window-button button-expand"></a>
             </div>
           </div>
+          <div class="finder-file-container content-container">
+          </div>
         </div>
 
         <div class="window terminal-window ui-widget-content hide">
@@ -503,6 +526,8 @@
               <a class="window-button button-min"></a>
               <a class="window-button button-expand"></a>
             </div>
+          </div>
+          <div class="finder-file-container content-container">
           </div>
         </div>
       </div>

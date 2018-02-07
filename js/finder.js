@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   // folders
   $('.finder-directory-container').on('click', function(e) {
     $('.finder-directory-container').removeClass('highlight');
@@ -10,6 +9,7 @@ $(document).ready(function() {
     $('.finder-selected-item-wrapper').addClass('hide');
   });
 
+  // folder outer directories
   $('.education-folder').on('click', function(e) {
     $('.education-items').removeClass('hide');
   });

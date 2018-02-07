@@ -36,10 +36,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0 5px;
+  padding: 2.5px 5px;
+  cursor: pointer;
 
   &:hover {
-    background-color: $mac-highlight-color;
+    background-color: $mac-highlight-color-dark;
   }
 }
 
@@ -54,17 +55,18 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0 5px;
+  padding: 2.5px 5px;
+  cursor: pointer;
 
   &:hover {
-    background-color: $mac-highlight-color;
+    background-color: $mac-highlight-color-dark;
   }
 }
 
 .finder-item-icon {
   width: 16px;
   margin-right: 5px;
-  margin-top: 2px;
+  margin-bottom: 1px;
 }
 
 .finder-selected-item {

@@ -38,10 +38,13 @@
 .taskbar-icon {
   @include short-transition;
   width: 42px;
+
+  &:active {
+    filter: brightness(50%);
+  }
 }
 
 .taskbar-icon-label {
-  @include short-transition;
   margin-top: -34px;
   visibility: hidden;
   width: 110px;
@@ -53,7 +56,6 @@
 }
 
 .label-triangle {
-  @include short-transition;
   margin-top: -24px;
   margin-bottom: 14px;
   border: 5px solid $mac-label-color;

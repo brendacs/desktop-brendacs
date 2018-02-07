@@ -1,10 +1,12 @@
 // general
 $general-font-color: #fff;
+$mac-gray: rgba(215, 215, 215, 1);
 
 // taskbar
 $mac-label-color: #cbcdcc;
 $mac-label-font-color: #000;
 $mac-highlight-color: rgba(179, 216, 253, 0.4);
+$mac-highlight-color-dark: darken($mac-highlight-color, 15%);
 
 // windows
 $window-background: #fff;

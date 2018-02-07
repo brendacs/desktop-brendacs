@@ -22,12 +22,29 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+hr {
+  visibility: hidden;
+  height: 2px;
+}
+
 .hide {
   display: none;
 }
 
 .highlight {
-  background-color: $mac-highlight-color;
+  background-color: $mac-highlight-color-dark;
+}
+
+.disabled-text {
+  color: darken($mac-gray, 10%);
+}
+
+.bottom-layer {
+  z-index: 1;
+}
+
+.top-layer {
+  z-index: 99;
 }
 
 .pc {
