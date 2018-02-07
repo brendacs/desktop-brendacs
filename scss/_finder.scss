@@ -103,3 +103,19 @@
 .selected-file {
   width: 60%;
 }
+
+// mobile finder styles
+
+@media screen and (max-width: 650px) {
+  .finder-section {
+    width: 50%;
+  }
+
+  .finder-section:last-child {
+    display: none;
+  }
+
+  .finder-selected-item {
+    display: none;
+  }
+}
