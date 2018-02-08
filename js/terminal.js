@@ -17,19 +17,18 @@ var listColor = {
 $(document).ready(function() {
   $('.terminal-content-container').terminal(function(command) {
     command = command.toLowerCase();
-    console.log(command);
     var args = command.split(' ');
     var cmd = args[0];
     var subcmd = args[1] ? args[1].toLowerCase() : null;
-
-    if (cmd === 'help' && !subcmd) {
+    if (!cmd) {
+      this.echo('');
+    } else if (cmd === 'help' && !subcmd) {
       this.echo('help\ncd\nls\npwd', listColor);
     } else if (cmd === 'pwd' && !subcmd) {
       this.echo(currPath, listColor);
     } else if (cmd === 'ls' && !subcmd) {
       this.echo(currDirFiles, listColor);
     } else if (cmd === 'cd') {
-      console.log(subcmd);
       if (!subcmd) {
         this.echo('');
       } else if (subcmd === '../') {
