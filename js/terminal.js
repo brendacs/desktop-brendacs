@@ -33,7 +33,7 @@ $(document).ready(function() {
         this.echo('');
       } else if (subcmd === '../') {
         currDirFiles = 'Education\nExperience\nProjects\nDocuments';
-        currPath = '~/Brenda_Zhang/Desktop'
+        currPath = '~/Brenda_Zhang/Desktop';
         if (curr === 'desktop') {
           this.echo('zsh: cd: permission denied', errColor);
         }
@@ -41,23 +41,23 @@ $(document).ready(function() {
       } else if (subcmd == 'desktop') {
         currDirFiles = 'Education\nExperience\nProjects\nDocuments';
         curr = 'desktop';
-        currPath = '~/Brenda_Zhang/Desktop'
+        currPath = '~/Brenda_Zhang/Desktop';
       } else if (subcmd == 'education') {
         currDirFiles = 'Burton High School.jpg\nUC Berkeley.jpg\nCognitive Science Major.pdf\nComputer Science Minor.pdf';
         curr = 'folder';
-        currPath = '~/Brenda_Zhang/Desktop/Education'
+        currPath = '~/Brenda_Zhang/Desktop/Education';
       } else if (subcmd == 'experience') {
         currDirFiles = 'The Climate Corporation.jpg\nStowk.jpg\nRegistria.png\nWeb Design DeCal.pdf\nAsian American Association.jpg\nFoundation or Letters.pdf';
         curr = 'folder';
-        currPath = '~/Brenda_Zhang/Desktop/Experience'
+        currPath = '~/Brenda_Zhang/Desktop/Experience';
       } else if (subcmd == 'projects') {
         currDirFiles = 'Discord Stop Bot.js\nDevil\'s Advocate.html\nReferobot.js\nLiquefy Web App.js\nNewsworthy New Tab.html\nCrayons4Kids Website.html';
         curr = 'folder';
-        currPath = '~/Brenda_Zhang/Desktop/Projects'
+        currPath = '~/Brenda_Zhang/Desktop/Projects';
       } else if (subcmd == 'documents') {
         currDirFiles = 'Resume.pdf\nAbout.pdf\nQuotes.pdf';
         curr = 'folder';
-        currPath = '~/Brenda_Zhang/Desktop/Documents'
+        currPath = '~/Brenda_Zhang/Desktop/Documents';
       } else {
         this.echo('cd: no such file or directory: ' + subcmd, errColor);
       }
