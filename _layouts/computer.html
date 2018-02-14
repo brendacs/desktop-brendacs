@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Site Information and SEO -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Brenda Zhang's Personal Portfolio">
+    <meta name="author" content="Brenda Zhang">
+    <meta name="keywords" content="Brenda Zhang, personal portfolio, resume, engineering, development">
+    <meta property="og:site_name" content="~/Brenda_Zhang/Desktop">
+    <meta property="og:title" content="Brenda Zhang's Personal Portfolio">
+    <meta property="og:image" content="images/lakeside_wallpaper.jpg">
+    <link rel="icon" href="images/directory.png">
+    <title>~/Brenda_Zhang/Desktop</title>
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto" rel="stylesheet">
+
+    <!-- CSS CDNs -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/1.11.4/css/jquery.terminal.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link href="css/main.min.css" rel="stylesheet" type="text/css">
+
+    <!-- JS CDNs -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/1.11.4/js/jquery.terminal.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script type="text/javascript" src="js/directory.js"></script>
+    <script type="text/javascript" src="js/window.js"></script>
+    <script type="text/javascript" src="js/finder.js"></script>
+    <script type="text/javascript" src="js/terminal.js"></script>
+
+  </head>
+  <body>
+    <div class="pc">
+      {% include user.html %}
+
+      {% include desktop.html %}
+
+      {% include taskbar.html %}
+
+      <div class="window-container">
+        {% include finder.html %}
+
+        {% include preview.html %}
+
+        {% include browser.html %}
+
+        {% include sublime.html %}
+
+        {% include terminal.html %}
+      </div>
+    </div>
+  </body>
+</html>
