@@ -16,6 +16,10 @@ $(document).ready(function() {
     $('.finder-selected-item-wrapper').addClass('hide');
   });
 
+  $('.window').on('click', '.button-min', function(e) {
+    $(this).closest('.window').addClass('hide');
+  });
+
   $('.window').on('click', function(e) {
     open = open + 1;
     $(this).closest('.window').css('z-index', zindex + open);
