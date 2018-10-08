@@ -4,6 +4,7 @@
 .sublime-content-container {
     width: 100%;
     height: 100%;
+    display: flex;
 }
 
 .sublime-sidebar {
@@ -11,4 +12,63 @@
   height: 92.5%;
   border-radius: 0 0 0 5px;
   background-color: lighten($mac-gray, 5%);
+  padding-top: 15px;
+}
+
+.sublime-sidebar-header {
+    font-weight: bold;
+    color: darken($mac-gray, 25%);
+    padding-left: 25px;
+}
+
+.sublime-sidebar-item {
+    display: flex;
+    width: 100%;
+    padding: 1px 0 1px 25px;
+    align-items: center;
+}
+
+.arrow-text {
+    color: darken($mac-gray, 25%);
+    margin-right: 3px;
+}
+
+.sublime-folder-img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    opacity: 0.7;
+}
+
+.sublime-sidebar-item.folder p {
+    font-weight: bold;
+}
+
+.sublime-sidebar-item:hover, .sublime-sidebar-item.active {
+    background-color: darken($mac-gray, 5%);
+}
+
+.sublime-code-content {
+   width: 80%;
+   height: 100%;
+   display: flex;
+   padding-top: 3px;
+}
+
+.sublime-code-content .numbers {
+    padding: 0 10px;
+    color: darken($mac-gray, 15%);
+    text-align: right;
+}
+
+.sublime-html p {
+   color: white;
+}
+
+.sublime-html .red {
+    color: #f92672;
+}
+
+.sublime-html .indent {
+    margin-left: 20px;
 }
