@@ -61,8 +61,17 @@
     text-align: right;
 }
 
-.sublime-html p {
-   color: white;
+.sublime-html {
+  width: 100%;
+  cursor: text;
+}
+
+.sublime-html .line {
+  color: white;
+}
+
+.sublime-html .line:hover {
+  background-color: #3a392f;
 }
 
 .sublime-html .red {
@@ -70,5 +79,5 @@
 }
 
 .sublime-html .indent {
-    margin-left: 20px;
+    padding-left: 20px;
 }

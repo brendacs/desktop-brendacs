@@ -80,6 +80,17 @@
   }
 }
 
+.window-title-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.window-title-container p {
+  margin-left: -70px;
+}
+
 // specific window styles
 
 .finder-window, .terminal-window {
