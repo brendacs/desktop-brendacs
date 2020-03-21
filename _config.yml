@@ -1,0 +1,10 @@
+title: Desktop
+email: hello@brendacs.dev
+description: >- # this means to ignore newlines until "baseurl:"
+  The desktop is the window to a developer's soul.
+  This is a personal portfolio I modeled after my own Mac desktop.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+sass:
+  sass_dir: _sass

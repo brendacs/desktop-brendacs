@@ -1,15 +1,11 @@
 {
-  "name": "desktop-brendacs",
+  "name": "Desktop",
   "version": "1.0.0",
   "description": "",
-  "main": "Gruntfile.js",
+  "main": "index.js",
   "devDependencies": {},
   "dependencies": {
     "express": "^4.15.4",
-    "grunt": "^1.0.1",
-    "grunt-contrib-cssmin": "^2.2.0",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0",
     "jquery.terminal": "^1.11.4"
   },
   "scripts": {
